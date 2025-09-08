@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthCorp - Wealth Management Redefined</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#4a5568'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        .video-container {
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('https://readdy.ai/api/search-image?query=professional%20modern%20office%20interior%20with%20glass%20walls%20and%20city%20view%2C%20elegant%20workspace%20design%20with%20minimalist%20furniture%2C%20natural%20lighting%2C%20business%20environment%2C%20high-end%20corporate%20setting&width=1920&height=1080&seq=1&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+  <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 text-2xl font-['Pacifico'] text-primary">
+        <img src="https://i.ibb.co.com/F42cDZ5K/Screenshot-2.jpg" alt="Logo" class="h-20 w-20 rounded-full">
+       
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#" class="text-gray-600 hover:text-primary">Home</a>
+        <a href="#" class="text-gray-600 hover:text-primary">About Us</a>
+        <a href="#" class="text-gray-600 hover:text-primary">Our Approach</a>
+        <a href="#" class="text-gray-600 hover:text-primary">Track Record</a>
+        <a href="#" class="text-gray-600 hover:text-primary">Insights & News</a>
+        <a href="#" class="text-gray-600 hover:text-primary">Partner Login</a>
+
+      </div>
+
+      <!-- Right Button -->
+      <div class="hidden lg:block">
+        <button class="bg-black text-white px-6 py-2 !rounded-button hover:bg-gray-800">
+          Client Portal
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="lg:hidden" x-data="{ open: false }">
+        <button @click="open = !open" class="text-gray-700 focus:outline-none">
+          <!-- Hamburger Icon -->
+          <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Close Icon -->
+          <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Mobile Dropdown -->
+        <div x-show="open" class="absolute top-16 left-0 w-full bg-white shadow-md rounded-b-xl p-6 space-y-4">
+          <a href="#" class="block text-gray-600 hover:text-primary">Home</a>
+          <a href="#" class="block text-gray-600 hover:text-primary">About Us</a>
+          <a href="#" class="block text-gray-600 hover:text-primary">Our Approach</a>
+          <a href="#" class="block text-gray-600 hover:text-primary">Track Record</a>
+          <a href="#" class="block text-gray-600 hover:text-primary">Insights & News</a>
+          <a href="#" class="block text-gray-600 hover:text-primary">Partner Login</a>
+          <button class="w-full bg-black text-white px-6 py-2 !rounded-button hover:bg-gray-800">
+            Client Portal
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Alpine.js CDN -->
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
+    <main>
+        <section class="video-container min-h-[90vh] flex items-center pt-20">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-white">
+                        <h1 class="text-5xl font-bold mb-6">Wealth Management Redefined</h1>
+                        <p class="text-xl mb-8 text-gray-200">Exclusive investment strategies tailored for discerning investors. Experience personalized wealth management with institutional-grade solutions.</p>
+                        <div class="flex gap-4">
+                            <button class="bg-white text-primary px-6 py-3 !rounded-button hover:bg-gray-100 whitespace-nowrap">Schedule Consultation</button>
+                            <button class="border border-white text-white px-6 py-3 !rounded-button hover:bg-white/10 whitespace-nowrap">View Portfolio</button>
+                        </div>
+                    </div>
+                    <!-- Thumbnail with Play Button -->
+<div class="relative aspect-video bg-black/20 rounded-lg overflow-hidden" x-data="{ open: false }">
+  <img src="https://via.placeholder.com/800x450" alt="Video thumbnail" class="w-full h-full object-cover">
+  <div class="absolute inset-0 flex items-center justify-center">
+    <button @click="open = true" class="w-16 h-16 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-full">
+      <i class="ri-play-fill text-white text-3xl"></i>
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div x-show="open" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+    <div class="relative w-11/12 md:w-3/4 lg:w-1/2 aspect-video bg-black rounded-lg overflow-hidden">
+      <button @click="open = false" class="absolute top-2 right-2 text-white text-2xl">✖</button>
+      <iframe class="w-full h-full"
+        src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Alpine.js -->
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+                    <p class="text-gray-600">Comprehensive wealth management solutions designed for sophisticated investors</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 !rounded-lg shadow-sm">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 !rounded-lg mb-6">
+                            <i class="ri-line-chart-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Portfolio Management</h3>
+                        <p class="text-gray-600">Customized investment portfolios aligned with your risk tolerance and financial objectives.</p>
+                    </div>
+                    <div class="bg-white p-8 !rounded-lg shadow-sm">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 !rounded-lg mb-6">
+                            <i class="ri-bank-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Private Banking</h3>
+                        <p class="text-gray-600">Exclusive banking services with dedicated relationship managers for high-net-worth clients.</p>
+                    </div>
+                    <div class="bg-white p-8 !rounded-lg shadow-sm">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 !rounded-lg mb-6">
+                            <i class="ri-shield-check-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Risk Management</h3>
+                        <p class="text-gray-600">Advanced risk assessment and mitigation strategies to protect and grow your wealth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-bold mb-2 text-primary">$2.5B+</div>
+                        <p class="text-gray-600">Assets Under Management</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2 text-primary">500+</div>
+                        <p class="text-gray-600">High-net-worth Clients</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2 text-primary">25+</div>
+                        <p class="text-gray-600">Years of Experience</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2 text-primary">98%</div>
+                        <p class="text-gray-600">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Client Testimonials</h2>
+                    <p class="text-gray-600">What our clients say about our services</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 !rounded-lg shadow-sm">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-gray-200 !rounded-full flex items-center justify-center">
+                                <i class="ri-user-3-line text-gray-500"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold">Robert Anderson</div>
+                                <div class="text-sm text-gray-600">CEO, Tech Innovations</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Their personalized approach has exceeded my expectations. My portfolio has consistently outperformed market benchmarks."</p>
+                    </div>
+                    <div class="bg-white p-8 !rounded-lg shadow-sm">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-gray-200 !rounded-full flex items-center justify-center">
+                                <i class="ri-user-3-line text-gray-500"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold">Elizabeth Chen</div>
+                                <div class="text-sm text-gray-600">Investment Director</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Their risk management strategies have protected my wealth during market volatility while maintaining steady growth."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-primary text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Elevate Your Wealth Strategy?</h2>
+                <p class="mb-8">Schedule a private consultation with our wealth management experts.</p>
+                <button class="bg-white text-primary px-8 py-3 !rounded-button hover:bg-gray-100">Book Consultation</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="container mx-auto px-6">
+    
+    <!-- Logo -->
+    <div class="text-2xl font-['Pacifico'] text-white mb-8 text-center lg:text-left">
+      <img src="https://i.ibb.co.com/F42cDZ5K/Screenshot-2.jpg" alt="Logo" class="inline-block h-20 w-20 mr-2 rounded-full">
+      
+    </div>
+
+    <!-- Desktop Grid -->
+    <div class="hidden lg:grid lg:grid-cols-4 gap-8">
+      <div>
+        <p>Exclusive wealth management for discerning investors.</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Portfolio Management</a></li>
+          <li><a href="#" class="hover:text-white">Private Banking</a></li>
+          <li><a href="#" class="hover:text-white">Risk Management</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Careers</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Contact</h3>
+        <ul class="space-y-2">
+          <li><i class="ri-phone-line mr-2"></i>+1 855 630 2139</li>
+          <li><i class="ri-mail-line mr-2"></i>hi@fsiprime.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mobile Accordion -->
+    <div class="lg:hidden space-y-4" x-data="{ open: null }">
+      <div>
+        <button @click="open === 1 ? open = null : open = 1" class="w-full flex justify-between items-center text-white font-bold">
+          Services
+          <span x-show="open !== 1">+</span>
+          <span x-show="open === 1">-</span>
+        </button>
+        <ul x-show="open === 1" class="mt-2 space-y-2 pl-4">
+          <li><a href="#" class="hover:text-white">Portfolio Management</a></li>
+          <li><a href="#" class="hover:text-white">Private Banking</a></li>
+          <li><a href="#" class="hover:text-white">Risk Management</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <button @click="open === 2 ? open = null : open = 2" class="w-full flex justify-between items-center text-white font-bold">
+          Company
+          <span x-show="open !== 2">+</span>
+          <span x-show="open === 2">-</span>
+        </button>
+        <ul x-show="open === 2" class="mt-2 space-y-2 pl-4">
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Careers</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <button @click="open === 3 ? open = null : open = 3" class="w-full flex justify-between items-center text-white font-bold">
+          Contact
+          <span x-show="open !== 3">+</span>
+          <span x-show="open === 3">-</span>
+        </button>
+        <ul x-show="open === 3" class="mt-2 space-y-2 pl-4">
+          <li><i class="ri-phone-line mr-2"></i>+1 855 630 2139</li>
+          <li><i class="ri-mail-line mr-2"></i>hi@fsiprime.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+      <p>&copy; 2025 WealthCorp. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Alpine.js CDN -->
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            let lastScroll = 0;
+
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll <= 0) {
+                    header.classList.remove('shadow-md');
+                    return;
+                }
+
+                if (currentScroll > lastScroll) {
+                    header.classList.add('shadow-md');
+                } else {
+                    header.classList.remove('shadow-md');
+                }
+                lastScroll = currentScroll;
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
